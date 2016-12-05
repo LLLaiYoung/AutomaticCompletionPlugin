@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		87C385641DF58F4B0065021B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 87C385631DF58F4B0065021B /* AppDelegate.m */; };
+		87C385671DF58F4B0065021B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87C385661DF58F4B0065021B /* main.m */; };
+		87C3856A1DF58F4B0065021B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87C385691DF58F4B0065021B /* ViewController.m */; };
+		87C3856C1DF58F4B0065021B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87C3856B1DF58F4B0065021B /* Assets.xcassets */; };
+		87C3856F1DF58F4B0065021B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87C3856D1DF58F4B0065021B /* Main.storyboard */; };
+		87C3857D1DF58F600065021B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87C3857C1DF58F600065021B /* Cocoa.framework */; };
+		87C385831DF58F600065021B /* SourceEditorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 87C385821DF58F600065021B /* SourceEditorExtension.m */; };
+		87C385861DF58F600065021B /* SourceEditorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 87C385851DF58F600065021B /* SourceEditorCommand.m */; };
+		87C3858A1DF58F600065021B /* AutomaticCompletion.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 87C3857A1DF58F600065021B /* AutomaticCompletion.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		87C385881DF58F600065021B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87C385571DF58F4B0065021B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87C385791DF58F600065021B;
+			remoteInfo = AutomaticCompletion;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		87C3858E1DF58F600065021B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				87C3858A1DF58F600065021B /* AutomaticCompletion.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		87C3855F1DF58F4B0065021B /* AutomaticCompletionPlugin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AutomaticCompletionPlugin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		87C385621DF58F4B0065021B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		87C385631DF58F4B0065021B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		87C385661DF58F4B0065021B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		87C385681DF58F4B0065021B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		87C385691DF58F4B0065021B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		87C3856B1DF58F4B0065021B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		87C3856E1DF58F4B0065021B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		87C385701DF58F4B0065021B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87C3857A1DF58F600065021B /* AutomaticCompletion.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AutomaticCompletion.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		87C3857C1DF58F600065021B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		87C385801DF58F600065021B /* AutomaticCompletion.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AutomaticCompletion.entitlements; sourceTree = "<group>"; };
+		87C385811DF58F600065021B /* SourceEditorExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorExtension.h; sourceTree = "<group>"; };
+		87C385821DF58F600065021B /* SourceEditorExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorExtension.m; sourceTree = "<group>"; };
+		87C385841DF58F600065021B /* SourceEditorCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorCommand.h; sourceTree = "<group>"; };
+		87C385851DF58F600065021B /* SourceEditorCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorCommand.m; sourceTree = "<group>"; };
+		87C385871DF58F600065021B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87C3855C1DF58F4B0065021B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87C385771DF58F600065021B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87C3857D1DF58F600065021B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		87C385561DF58F4B0065021B = {
+			isa = PBXGroup;
+			children = (
+				87C385611DF58F4B0065021B /* AutomaticCompletionPlugin */,
+				87C3857E1DF58F600065021B /* AutomaticCompletion */,
+				87C3857B1DF58F600065021B /* Frameworks */,
+				87C385601DF58F4B0065021B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		87C385601DF58F4B0065021B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87C3855F1DF58F4B0065021B /* AutomaticCompletionPlugin.app */,
+				87C3857A1DF58F600065021B /* AutomaticCompletion.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87C385611DF58F4B0065021B /* AutomaticCompletionPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				87C385621DF58F4B0065021B /* AppDelegate.h */,
+				87C385631DF58F4B0065021B /* AppDelegate.m */,
+				87C385681DF58F4B0065021B /* ViewController.h */,
+				87C385691DF58F4B0065021B /* ViewController.m */,
+				87C3856B1DF58F4B0065021B /* Assets.xcassets */,
+				87C3856D1DF58F4B0065021B /* Main.storyboard */,
+				87C385701DF58F4B0065021B /* Info.plist */,
+				87C385651DF58F4B0065021B /* Supporting Files */,
+			);
+			path = AutomaticCompletionPlugin;
+			sourceTree = "<group>";
+		};
+		87C385651DF58F4B0065021B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				87C385661DF58F4B0065021B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		87C3857B1DF58F600065021B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87C3857C1DF58F600065021B /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		87C3857E1DF58F600065021B /* AutomaticCompletion */ = {
+			isa = PBXGroup;
+			children = (
+				87C385811DF58F600065021B /* SourceEditorExtension.h */,
+				87C385821DF58F600065021B /* SourceEditorExtension.m */,
+				87C385841DF58F600065021B /* SourceEditorCommand.h */,
+				87C385851DF58F600065021B /* SourceEditorCommand.m */,
+				87C385871DF58F600065021B /* Info.plist */,
+				87C3857F1DF58F600065021B /* Supporting Files */,
+			);
+			path = AutomaticCompletion;
+			sourceTree = "<group>";
+		};
+		87C3857F1DF58F600065021B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				87C385801DF58F600065021B /* AutomaticCompletion.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		87C3855E1DF58F4B0065021B /* AutomaticCompletionPlugin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87C385731DF58F4B0065021B /* Build configuration list for PBXNativeTarget "AutomaticCompletionPlugin" */;
+			buildPhases = (
+				87C3855B1DF58F4B0065021B /* Sources */,
+				87C3855C1DF58F4B0065021B /* Frameworks */,
+				87C3855D1DF58F4B0065021B /* Resources */,
+				87C3858E1DF58F600065021B /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87C385891DF58F600065021B /* PBXTargetDependency */,
+			);
+			name = AutomaticCompletionPlugin;
+			productName = AutomaticCompletionPlugin;
+			productReference = 87C3855F1DF58F4B0065021B /* AutomaticCompletionPlugin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		87C385791DF58F600065021B /* AutomaticCompletion */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87C3858B1DF58F600065021B /* Build configuration list for PBXNativeTarget "AutomaticCompletion" */;
+			buildPhases = (
+				87C385761DF58F600065021B /* Sources */,
+				87C385771DF58F600065021B /* Frameworks */,
+				87C385781DF58F600065021B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AutomaticCompletion;
+			productName = AutomaticCompletion;
+			productReference = 87C3857A1DF58F600065021B /* AutomaticCompletion.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87C385571DF58F4B0065021B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = LaiYoung_;
+				TargetAttributes = {
+					87C3855E1DF58F4B0065021B = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 7BT4LD3H35;
+						ProvisioningStyle = Automatic;
+					};
+					87C385791DF58F600065021B = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 7BT4LD3H35;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 87C3855A1DF58F4B0065021B /* Build configuration list for PBXProject "AutomaticCompletionPlugin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 87C385561DF58F4B0065021B;
+			productRefGroup = 87C385601DF58F4B0065021B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87C3855E1DF58F4B0065021B /* AutomaticCompletionPlugin */,
+				87C385791DF58F600065021B /* AutomaticCompletion */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		87C3855D1DF58F4B0065021B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87C3856C1DF58F4B0065021B /* Assets.xcassets in Resources */,
+				87C3856F1DF58F4B0065021B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87C385781DF58F600065021B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87C3855B1DF58F4B0065021B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87C3856A1DF58F4B0065021B /* ViewController.m in Sources */,
+				87C385671DF58F4B0065021B /* main.m in Sources */,
+				87C385641DF58F4B0065021B /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87C385761DF58F600065021B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87C385831DF58F600065021B /* SourceEditorExtension.m in Sources */,
+				87C385861DF58F600065021B /* SourceEditorCommand.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		87C385891DF58F600065021B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87C385791DF58F600065021B /* AutomaticCompletion */;
+			targetProxy = 87C385881DF58F600065021B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		87C3856D1DF58F4B0065021B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				87C3856E1DF58F4B0065021B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		87C385711DF58F4B0065021B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		87C385721DF58F4B0065021B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		87C385741DF58F4B0065021B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7BT4LD3H35;
+				INFOPLIST_FILE = AutomaticCompletionPlugin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LaiYoung-.AutomaticCompletionPlugin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		87C385751DF58F4B0065021B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7BT4LD3H35;
+				INFOPLIST_FILE = AutomaticCompletionPlugin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LaiYoung-.AutomaticCompletionPlugin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		87C3858C1DF58F600065021B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AutomaticCompletion/AutomaticCompletion.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7BT4LD3H35;
+				INFOPLIST_FILE = AutomaticCompletion/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LaiYoung-.AutomaticCompletionPlugin.AutomaticCompletion";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		87C3858D1DF58F600065021B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = AutomaticCompletion/AutomaticCompletion.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7BT4LD3H35;
+				INFOPLIST_FILE = AutomaticCompletion/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.LaiYoung-.AutomaticCompletionPlugin.AutomaticCompletion";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87C3855A1DF58F4B0065021B /* Build configuration list for PBXProject "AutomaticCompletionPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87C385711DF58F4B0065021B /* Debug */,
+				87C385721DF58F4B0065021B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87C385731DF58F4B0065021B /* Build configuration list for PBXNativeTarget "AutomaticCompletionPlugin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87C385741DF58F4B0065021B /* Debug */,
+				87C385751DF58F4B0065021B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		87C3858B1DF58F600065021B /* Build configuration list for PBXNativeTarget "AutomaticCompletion" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87C3858C1DF58F600065021B /* Debug */,
+				87C3858D1DF58F600065021B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 87C385571DF58F4B0065021B /* Project object */;
+}
