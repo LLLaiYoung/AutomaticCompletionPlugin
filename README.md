@@ -19,5 +19,9 @@ Objc，Getter 函数自动补全插件，基于 Xcode 8 的 Source Editor Extens
 #### 快捷键设置，在用户偏好设置里面选择`Key Bindings`，输入`AutomaticCompletion` 使用自定义快捷键
 ![Paste_Image.png](http://upload-images.jianshu.io/upload_images/959078-f98f2302c34ce358.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-#### 注意事项：插件使用的证书要和项目的证书要一致
+#### 注意事项：
+1. 插件使用的证书要和项目的证书要一致
+2. 如果如果你的Xcode是运行在 OS X 10.11 El Capitan的话，打开Terminal，执行下面的命令，然后重启Mac。</br>`sudo /usr/libexec/xpccachectl`
+
+#### 求 star 支持  😘
 
