@@ -84,8 +84,8 @@ static inline NSArray *AutomatedCompletionWithClsAndProperty(NSString *clsName, 
         [array addObject:setTargetString];
     } else if ([clsName isEqualToString:@"UITableView"]) {
         initString = [NSString stringWithFormat:@"        _%@ = [[UITableView alloc] initWithFrame:<#(CGRect)#> style:<#(UITableViewStyle)#>]",propertyName];
-        NSString *dataSourceString = [NSString stringWithFormat:@"        _%@.dataSource = (id)self;",propertyName];
         NSString *footerViewString = [NSString stringWithFormat:@"        _%@.tableFooterView = [[UIView alloc] init];",propertyName];
+        NSString *registerString = [NSString stringWithFormat:@"        [_%@ registerClass:<#(nullable Class)#> forCellReuseIdentifier:NSStringFromClass(self Class)];",propertyName];
         NSString *annotationString =@"        /** iPad 适配 */";
         NSString *adaperiPadLine1String = [NSString stringWithFormat:@"        if ([_%@ respondsToSelector:@selector(setCellLayoutMarginsFollowReadableWidth:)]) {",propertyName];
         NSString *adaperiPadLine2String = [NSString stringWithFormat:@"            _%@.cellLayoutMarginsFollowReadableWidth = NO;",propertyName];
@@ -93,9 +93,10 @@ static inline NSArray *AutomatedCompletionWithClsAndProperty(NSString *clsName, 
         [array removeLastObject];
         [array addObject:initString];
         [array addObject:BackgroundColorStringWithProperty(propertyName)];
-        [array addObject:dataSourceString];
+        [array addObject:DatasourceStringWithProperty(propertyName)];
         [array addObject:DelegateStringWithProperty(propertyName)];
         [array addObject:footerViewString];
+        [array addObject:registerString];
         [array addObject:annotationString];
         [array addObject:adaperiPadLine1String];
         [array addObject:adaperiPadLine2String];
@@ -120,6 +121,23 @@ static inline NSArray *AutomatedCompletionWithClsAndProperty(NSString *clsName, 
         [array addObject:borderStyleString];
         [array addObject:secureTextEntryString];
         [array addObject:clearButtonModeString];
+    } else if ([clsName isEqualToString:@"UICollectionView"]) {
+        NSString *flowLayoutInitString = [NSString stringWithFormat:@"        UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];"];
+        NSString *itemSizeString = [NSString stringWithFormat:@"        flowLayout.itemSize = <#CGSizeMake#>;"];
+        NSString *minimumLineSpacingString = [NSString stringWithFormat:@"        flowLayout.minimumLineSpacing = <#xxx#>;"];
+        NSString *minimumInteritemSpacingString = [NSString stringWithFormat:@"        flowLayout.minimumInteritemSpacing = <#xxx#>;"];
+        initString = [NSString stringWithFormat:@"        _%@ = [[UICollectionView alloc] initWithFrame:<#CGRect#> collectionViewLayout:flowLayout];",propertyName];
+        NSString *registerString = [NSString stringWithFormat:@"        [_%@ registerClass:<#(nullable Class)#> forCellWithReuseIdentifier:NSStringFromClass(self.class)];",propertyName];
+        [array removeLastObject];
+        [array addObject:flowLayoutInitString];
+        [array addObject:itemSizeString];
+        [array addObject:minimumLineSpacingString];
+        [array addObject:minimumInteritemSpacingString];
+        [array addObject:initString];
+        [array addObject:BackgroundColorStringWithProperty(propertyName)];
+        [array addObject:DelegateStringWithProperty(propertyName)];
+        [array addObject:DatasourceStringWithProperty(propertyName)];
+        [array addObject:registerString];
     }
     [array addObject:judgeEndString];
     [array addObject:returnString];
@@ -133,6 +151,10 @@ static inline NSString *BackgroundColorStringWithProperty(NSString *propertyName
 
 static inline NSString *DelegateStringWithProperty(NSString *propertyName) {
     return [NSString stringWithFormat:@"        _%@.delegate = (id)self;",propertyName];
+}
+
+static inline NSString *DatasourceStringWithProperty(NSString *propertyName) {
+    return [NSString stringWithFormat:@"        _%@.dataSource = (id)self;",propertyName];
 }
 
 static inline NSString *FontStringWithProperty(NSString *propertyName) {
