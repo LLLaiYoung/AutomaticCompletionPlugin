@@ -85,7 +85,7 @@ static inline NSArray *AutomatedCompletionWithClsAndProperty(NSString *clsName, 
     } else if ([clsName isEqualToString:@"UITableView"]) {
         initString = [NSString stringWithFormat:@"        _%@ = [[UITableView alloc] initWithFrame:<#(CGRect)#> style:<#(UITableViewStyle)#>]",propertyName];
         NSString *footerViewString = [NSString stringWithFormat:@"        _%@.tableFooterView = [[UIView alloc] init];",propertyName];
-        NSString *registerString = [NSString stringWithFormat:@"        [_%@ registerClass:<#(nullable Class)#> forCellReuseIdentifier:NSStringFromClass(self Class)];",propertyName];
+        NSString *registerString = [NSString stringWithFormat:@"        [_%@ registerClass:<#(nullable Class)#> forCellReuseIdentifier:NSStringFromClass(self.class)];",propertyName];
         NSString *annotationString =@"        /** iPad 适配 */";
         NSString *adaperiPadLine1String = [NSString stringWithFormat:@"        if ([_%@ respondsToSelector:@selector(setCellLayoutMarginsFollowReadableWidth:)]) {",propertyName];
         NSString *adaperiPadLine2String = [NSString stringWithFormat:@"            _%@.cellLayoutMarginsFollowReadableWidth = NO;",propertyName];
