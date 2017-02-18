@@ -11,7 +11,7 @@
 
 @implementation SourceEditorCommand
 static inline BOOL VerifyInstanceMethod(NSString *string) {
-    if ([string containsString:@"-"]) {
+    if ([string hasPrefix:@"-"]) {
         return YES;
     }
     return NO;
